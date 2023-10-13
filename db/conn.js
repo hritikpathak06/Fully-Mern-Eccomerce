@@ -3,7 +3,7 @@ import colors from "colors"
 
 const connectDb = async() => {
     try {
-        const conn = await mongoose.connect(process.env.MONGO_URI,{
+        const conn = await mongoose.connect("mongodb+srv://phritik06:6IrBlXpd2sJ4I8pE@e-shop.pcputyw.mongodb.net/techy?retryWrites=true&w=majority",{
             useNewUrlParser:true,
             useUnifiedTopology:true
         });
