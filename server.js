@@ -8,9 +8,14 @@ import authRoutes from "./routes/authRoutes.js";
 import categoryRoute from "./routes/categoryRoute.js";
 import productRoute from "./routes/productRoute.js";
 import path from "path";
+import {fileURLToPath} from "url";
 
 // config env
 dotenv.config();
+
+// ES MODULE FIx
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // db configg
 connectDb();
